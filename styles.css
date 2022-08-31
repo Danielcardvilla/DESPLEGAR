@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+body {
+    font-family: 'Silkscreen', cursive;
+    background-color: #6FEDD6;
+    
+}
+
+
+#seleccionar-mascota {
+    display:flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+}
+.titulo {
+    color: #FF9551;
+    font-size: 140px;
+/*     margin: 50px 0px 0px 0px;
+ */
+ font-family: 'Silkscreen', cursive;
+}
+.subtitulo {
+    color: #FF9551;
+    font-size: 48px;
+}
+
+.tarjetas, .tarjetas-ataques { 
+    display: flex;
+    gap: 10px; /*  gap se usa para espaciar cuando estamos utilizando la propiedad flex*/
+}
+
+.tarjeta-de-mokepon {
+    background-color: #FF4A4A;
+    color: #B9FFF8;
+    width: 195px;
+    height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius:20px ;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-de-mokepon img {
+    width: 100px;
+}
+
+#boton-mascota {
+    width: 137px;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 20px;
+    font-family: 'Silkscreen', cursive;
+    background-color: #FF9551;
+    border: 1px, solid red;
+    color: #B9FFF8   
+}
+
+input {
+display: none; 
+}
+input:checked + label {
+    background-color: #FF9551;
+}
+
+#seleccionar-ataque {
+    display: flex; /*en este caso hubo que hacer una acttualizaci'on del display flex en el JS en la linea 34 pas'o de block a flex*/
+    flex-direction: column;
+    align-items: center;
+}
+
+.Boton-de-ataque {
+    background-color: #FF4A4A;
+    padding: 10px;
+    color: #B9FFF8;
+    box-sizing: border-box;
+    border-radius:20px;
+    width: 180px;
+    font-family: 'Silkscreen', cursive;
+}
+
+/* #mensajes {
+    width: 280px;
+     padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #FF9551;
+}
+#boton-reiniciar {
+    border: none;
+    color:#FF9551;
+    font-family: 'Silkscreen', cursive;
+}
+.ataques {
+    display: grid;
+    grid-template-columns: 200px 100px;
+    color: #6FEDD6;
+  }
+  
+  #vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+  
+  .ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+cd
+  @media (max-width: 360px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    } } */
+
+    #mensajes {
+  width: 280px;
+  background: #FF4A4A;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#boton-reiniciar {
+  border: none;
+  color: #11468F;
+  font-family: 'Poppins', sans-serif;
+}
+
+.ataques {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  color: #FF9551;
+}
+
+#vidas-jugador, #vidas-enemigo {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.ataques-jugador, .ataques-enemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 360px) {
+  .tarjetas, .tarjetas-ataques {
+    flex-direction: column;
+  }
+}
+
+   
